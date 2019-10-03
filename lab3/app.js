@@ -9,7 +9,9 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var mother = require('./routes/mother');
+var father = require('./routes/father');
+var sibling = require('./routes/sibling');
 var app = express();
 
 // view engine setup
@@ -26,6 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/mother', mother);
+app.use('/father', father);
+app.use('/sibling', sibling);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

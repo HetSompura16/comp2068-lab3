@@ -3,5 +3,17 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
   body
     block content
+      .col-md-12
+        .col-md-2
+          a(href='/') Het
+        .col-md-2
+          a(href='/mother') Mother
+        .col-md-2
+          a(href='/father') Father
+        .col-md-2
+          a(href='/sibling') Sibling
+
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')

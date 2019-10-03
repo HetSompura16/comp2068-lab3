@@ -2,9 +2,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET sibling page. */
 router.get('/', function (req, res) {
-	res.render('index', { name: 'Het', comment: 'Web Developer' });
+	res.render('sibling', { name: 'Darpen', comment: 'he is very talented' });
 });
 
 module.exports = router;
